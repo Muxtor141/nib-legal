@@ -1,0 +1,31 @@
+:root{--ground:#FBF5EC;--surface:#FFFFFF;--text:#1E1B18;--muted:#6F655B;--line:#E9DFD1;--accent:#C8643F}
+@media (prefers-color-scheme:dark){:root{--ground:#1C1916;--surface:#26221E;--text:#F3EBDD;--muted:#B5A998;--line:rgba(255,255,255,.1);--accent:#E7936F}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:32px 16px 80px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:32px;flex-wrap:wrap}
+header img{width:52px;height:52px;border-radius:12px}
+header a{color:var(--text);text-decoration:none;font-weight:700;font-size:20px;font-family:ui-serif,"New York",Georgia,serif}
+nav{margin-left:auto;display:flex;gap:16px;font-size:15px;flex-wrap:wrap}
+nav a{color:var(--muted);font-weight:500;font-size:15px;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
+h1,h2{font-family:ui-serif,"New York",Georgia,serif}
+h1{font-size:34px;line-height:1.15;margin:0 0 8px;letter-spacing:-.01em}
+h2{font-size:21px;line-height:1.3;margin:36px 0 8px}
+p,li{color:var(--text);overflow-wrap:break-word}
+.lede{color:var(--muted);font-size:19px;margin:0 0 24px}
+.meta{color:var(--muted);font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:16px 0;box-shadow:0 3px 10px rgba(60,40,20,.05)}
+.card h2{margin-top:0}
+a{color:var(--accent)}
+ul{padding-left:22px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:break-word}
+th{color:var(--muted);font-weight:600}
+footer{margin-top:48px;color:var(--muted);font-size:14px}
+@media (max-width:420px){h1{font-size:29px}.card{padding:18px 18px}td,th{padding:8px 6px}}
+
+.page{padding:12px}.page img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
+.actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:20px 0}
+.button{display:inline-block;background:var(--text);color:var(--ground);padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600}
+.muted{color:var(--muted);font-size:14px}
