@@ -11,6 +11,9 @@
 <h2>Photo pages ("Color your photo")</h2>
 <p>When you choose a photo to turn into a coloring page, Apple's photo picker gives Nib only that one photo; Nib can't see the rest of your library. The page is made entirely on your device: Apple's on-device Vision framework finds the subject (and, for pets and faces, the eyes), and Nib's own code draws the lines. The photo is not uploaded, not sent to us or anyone else, and not saved by Nib. Only the finished page (its line drawing, its areas and a small set of colors taken from the photo) is saved in the app's private storage, like your artwork.</p>
 
+<h2>Imported pages</h2>
+<p>When you import a coloring page (a PNG, JPG or PDF from Files, or a photo of a printed page), Nib cleans up its lines on your device so every area can be filled. The file or photo is not uploaded, not sent to us or anyone else, and not saved by Nib: only the cleaned-up page is saved in the app's private storage. Please import only pages you have the right to use.</p>
+
 <h2>Coloring pages from our content server</h2>
 <p>Nib ships with built-in pages. It may also download new pages and an updated page list from our content server, which is a static file host. These are plain downloads: like any web request, they expose your IP address and basic request information (such as the time of the request and standard network headers) to the host. No personal data and no artwork is sent.</p>
 
@@ -20,7 +23,7 @@
 <h2>Data we collect</h2>
 <table><tr><th>Category</th><th>Collected?</th><th>Notes</th></tr>
 <tr><td>Artwork, stroke history, thumbnails</td><td>No</td><td>Stored on your device only</td></tr>
-<tr><td>Photos you turn into pages</td><td>No</td><td>Processed on your device only, never uploaded or kept</td></tr>
+<tr><td>Photos and files you turn into pages</td><td>No</td><td>Processed on your device only, never uploaded or kept</td></tr>
 <tr><td>Purchase history</td><td>Yes</td><td>Via Apple and RevenueCat, linked to an anonymous ID, used only to unlock Nib Plus</td></tr>
 <tr><td>Analytics, advertising, tracking</td><td>No</td><td>No analytics SDKs, no ads, no tracking</td></tr>
 <tr><td>Contact info, location, contacts</td><td>No</td><td>Never requested</td></tr></table>
@@ -28,7 +31,7 @@
 <h2>Permissions</h2><ul>
 <li><strong>Notifications</strong> (optional) — a reminder when the free daily page is ready. Reminders are scheduled locally on your device; there is no push server.</li>
 <li><strong>Photos (add only)</strong> — requested only when you tap Save Image or save a video, so Nib can add it to your library. Nib cannot read your library.</li>
-<li><strong>Photo picker</strong> — used for photo pages. It needs no permission: Apple's picker hands Nib only the photo you choose.</li>
+<li><strong>Photo picker and Files</strong> — used for photo pages, imports and "Me vs. you". They need no permission: Apple's pickers hand Nib only the photo or file you choose.</li>
 <li>Nib does not use the camera, location, contacts or microphone.</li></ul>
 
 <h2>Sharing</h2>
